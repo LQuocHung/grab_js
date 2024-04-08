@@ -54,7 +54,7 @@ tinhTien.onclick = function () {
   console.log(soKm);
   const thoiGian = getEle("thoiGian").value * 1;
   console.log(thoiGian);
-  let tongTienXe = 0;
+let tongTienXe = 0;
   const loaiXe = chonLoaiXe();
 
   switch (loaiXe) {
@@ -62,20 +62,20 @@ tinhTien.onclick = function () {
       if (0 <= soKm && soKm <= 1) {
         const tongTienDau = soKm_1(soKm, 8000);
         const tienCho = tinhTienCho(thoiGian, 2000);
-        tongTienXe = tongTienDau + tienCho;
+         tongTienXe = tongTienDau + tienCho;
       } else if (1 < soKm <= 19) {
         const tongTienDau = soKm_1(1, 8000);
         const tongTienSau = soKm_2(soKm, 7500);
         const tienCho = tinhTienCho(thoiGian, 2000);
 
-        tongTienXe = tongTienDau + tongTienSau + tienCho;
+         tongTienXe = tongTienDau + tongTienSau + tienCho;
       } else if (soKm > 19) {
         const tongTienDau = soKm_1(soKm, 8000);
         const tongTienSau = soKm_2(soKm, 7500);
         const tongTienCuoi = soKm_3(soKm, 7000);
         const tienCho = tinhTienCho(thoiGian, 2000);
 
-        tongTienXe = tongTienDau + tongTienSau + tongTienCuoi + tienCho;
+         tongTienXe = tongTienDau + tongTienSau + tongTienCuoi + tienCho;
       }
       break;
 
@@ -83,40 +83,41 @@ tinhTien.onclick = function () {
       if (0 <= soKm && soKm <= 1) {
         const tongTienDau = soKm_1(soKm, 9000);
         const tienCho = tinhTienCho(thoiGian, 3000);
-        tongTienXe = tongTienDau + tienCho;
+         tongTienXe = tongTienDau + tienCho;
+
       } else if (1 < soKm <= 19) {
         const tongTienDau = soKm_2(1, 9000);
         const tongTienSau = soKm_2(soKm, 8500);
         const tienCho = tinhTienCho(thoiGian, 3000);
 
-        tongTienXe = tongTienDau + tongTienSau + tienCho;
+         tongTienXe = tongTienDau + tongTienSau + tienCho;
       } else if (soKm > 19) {
         const tongTienDau = soKm_1(soKm, 9000);
         const tongTienSau = soKm_2(soKm, 8500);
         const tongTienCuoi = soKm_3(soKm, 8000);
         const tienCho = tinhTienCho(thoiGian, 3000);
 
-        tongTienXe = tongTienDau + tongTienSau + tongTienCuoi + tienCho;
+         tongTienXe = tongTienDau + tongTienSau + tongTienCuoi + tienCho;
       }
       break;
     case "grabBlack":
       if (0 <= soKm && soKm <= 1) {
         const tongTienDau = soKm_1(soKm, 10000);
         const tienCho = tinhTienCho(thoiGian, 3500);
-        tongTienXe = tongTienDau + tienCho;
+         tongTienXe = tongTienDau + tienCho;
       } else if (1 < soKm <= 19) {
         const tongTienDau = soKm_1(soKm, 10000);
         const tongTienSau = soKm_2(soKm, 9500);
         const tienCho = tinhTienCho(thoiGian, 3500);
 
-        tongTienXe = tongTienDau + tongTienSau + tienCho;
+         tongTienXe = tongTienDau + tongTienSau + tienCho;
       } else if (soKm > 19) {
         const tongTienDau = soKm_1(soKm, 10000);
         const tongTienSau = soKm_2(soKm, 9500);
         const tongTienCuoi = soKm_3(soKm, 9000);
         const tienCho = tinhTienCho(thoiGian, 3500);
 
-        tongTienXe = tongTienDau + tongTienSau + tongTienCuoi + tienCho;
+         tongTienXe = tongTienDau + tongTienSau + tongTienCuoi + tienCho;
       }
       break;
 
